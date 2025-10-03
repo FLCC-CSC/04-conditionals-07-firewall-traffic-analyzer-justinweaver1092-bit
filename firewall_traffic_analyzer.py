@@ -25,8 +25,8 @@ elif port_num == 80 or data_size  >= 100:
     print ("MEDIUM RISK: Large unencrypted data transfer detected.")
 elif port_num == 433 :
     print('LOW RISK: Secure encrypted transfer detected.')
-
-
+else:
+    print("UNKNOWN: Unrecognized traffic pattern.")
 
 
 
