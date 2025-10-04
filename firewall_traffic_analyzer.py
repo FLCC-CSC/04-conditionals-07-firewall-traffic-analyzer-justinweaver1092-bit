@@ -1,8 +1,8 @@
 # FILE NAME - firewall_traffic_analyzer.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Justin Weaver
+# DATE: 10/3/25
+# BRIEF DESCRIPTION:  firewall_traffic_analyzer 
 
 
 
@@ -14,9 +14,26 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+print('=== Network Traffic Security Analyzer ===')
+print()
+port_num=(int(input('Enter the port number (e.g., 80, 22, 443, 3389): ')))
+data_size=(int(input('Enter the data transfer size in megabytes (MB): ')))
+print('FIREWALL LOG:')
+print(f'Port: {port_num}, Transfer Size: {data_size} MB')
 
+if port_num == 443:
+    print('Risk Assessment: LOW RISK: Secure encrypted transfer detected.') 
 
+elif port_num == 80 and data_size > 100:
+    print ("Risk Assessment: MEDIUM RISK: Large unencrypted data transfer detected.")
 
+elif port_num == 22 or port_num == 3389 and data_size <= 100:
+    print ("Risk Assessment: HIGH RISK: Potential unauthorized remote access detected!")
+
+else:
+    print("Risk Assessment: UNKNOWN: Unrecognized traffic pattern.")
+
+print('------------------------')
 
 
 
@@ -90,7 +107,10 @@ Risk Assessment: UNKNOWN: Unrecognized traffic pattern.
 
 1. Did you get tripped up using the `or` or `and` operators? If so, how?
 
-
+Not so much with the 'or' or the 'and' they kinda fit in naturally where they would in normal speech.
+I mainly got tripped up with the 3389 because no where in the lab description did it mention 3389.
+And then the order of it 'if' and the 'elif'. I oringally had it in high, med, and low risk order. But then realized it kept shorting circiting when enter a port of 443. 
+After that it was a lot of just getting the outputs to match up correctly. 
 
 
 
