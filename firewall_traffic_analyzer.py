@@ -1,8 +1,8 @@
 # FILE NAME - firewall_traffic_analyzer.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Justin Weaver
+# DATE: 10/3/25
+# BRIEF DESCRIPTION:  firewall_traffic_analyzer 
 
 
 
@@ -107,7 +107,10 @@ Risk Assessment: UNKNOWN: Unrecognized traffic pattern.
 
 1. Did you get tripped up using the `or` or `and` operators? If so, how?
 
-
+Not so much with the 'or' or the 'and' they kinda fit in naturally where they would in normal speech.
+I mainly got tripped up with the 3389 because no where in the lab description did it mention 3389.
+And then the order of it 'if' and the 'elif'. I oringally had it in high, med, and low risk order. But then realized it kept shorting circiting when enter a port of 443. 
+After that it was a lot of just getting the outputs to match up correctly. 
 
 
 
