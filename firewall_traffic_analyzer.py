@@ -27,7 +27,7 @@ if port_num == 443:
 elif port_num == 80 and data_size > 100:
     print ("Risk Assessment: MEDIUM RISK: Large unencrypted data transfer detected.")
 
-elif port_num == 22 and data_size <= 100:
+elif port_num == 22 or port_num == 3389 and data_size <= 100:
     print ("Risk Assessment: HIGH RISK: Potential unauthorized remote access detected!")
 
 else:
