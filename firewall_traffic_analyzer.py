@@ -15,6 +15,7 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 print('=== Network Traffic Security Analyzer ===')
+print()
 port_num=(int(input('Enter the port number (e.g., 80, 22, 443, 3389): ')))
 data_size=(int(input('Enter the data transfer size in megabytes (MB): ')))
 print('FIREWALL LOG:')
@@ -29,7 +30,7 @@ elif port_num == 433 :
 else:
     print("Risk Assessment: UNKNOWN: Unrecognized traffic pattern.")
 
-
+print('------------------------')
 
 
 
